@@ -168,7 +168,32 @@ Create image from commit
 docker commit container_id image_name
 ```
 
+# Docker volumes
 
-
-
-
+List volumes
+```
+docker volume ls
+```
+List volumes ids
+```
+docker volume ls -q
+```
+Create a volume
+```
+docker volume create --name volumen_name
+```
+Run container ataching the volume (volumen name:volumen path in container)
+```
+docker run -ti -v volumen_name:/volumen_path ubuntu bash
+```
+Inspect volume
+```
+docker volume inspect volumen_name
+```
+Remove volumen
+```
+delete volume rm volume_name
+```
+Run container with volume in absolute path
+```
+docker run -ti -v /home/max/ubuntu:/prueba ubuntu bash
