@@ -1,0 +1,10 @@
+web:
+	build: .
+	volumes:
+		- .:/platzi
+	link:
+		- redis
+	ports:
+		- "80:5000"
+redis:
+	image: redis
