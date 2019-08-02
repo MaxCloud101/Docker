@@ -123,7 +123,7 @@ docker attach container_id
 ```
 To enter a container as a second door
 ```
-docker exec -ti b916 basg
+docker exec -ti b916 bash
 ```
 
 ## Inspect containers
